@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     @State var showFavoriteColor: Bool = false
-    
+    @State var userName: String = ""
     var body: some View {
         VStack {
-            Text("Hello, world!")
+            TextField("User", text: $userName)
                 .font(.headline)
                 
             Text("Hello CodePath!!")
